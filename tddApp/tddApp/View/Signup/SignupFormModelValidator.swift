@@ -10,7 +10,8 @@ import Foundation
 class SignupFormModelValidator {
     
     func isFirstNameValid(firstName: String) -> Bool{
-        let firsNameIsValid: Bool = firstName.isEmpty ? false : true
+        let minimumLengthName:Int = 2
+        let firsNameIsValid: Bool = firstName.count < minimumLengthName ? false : true
         
         return firsNameIsValid
     }
