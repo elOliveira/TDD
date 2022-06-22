@@ -16,6 +16,7 @@
 		4FA821CA2862EAA500BBF533 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA821C82862EAA500BBF533 /* SignupViewController.swift */; };
 		4FA821CB2862EAA500BBF533 /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FA821C92862EAA500BBF533 /* SignupViewController.xib */; };
 		4FA821CD2862EC0700BBF533 /* SignupFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA821CC2862EC0700BBF533 /* SignupFormModelValidatorTests.swift */; };
+		4FA821CF2862F03C00BBF533 /* SignupFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA821CE2862F03C00BBF533 /* SignupFormModelValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4FA821C82862EAA500BBF533 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		4FA821C92862EAA500BBF533 /* SignupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
 		4FA821CC2862EC0700BBF533 /* SignupFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidatorTests.swift; sourceTree = "<group>"; };
+		4FA821CE2862F03C00BBF533 /* SignupFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,10 +187,19 @@
 		4FA821C72862EA3C00BBF533 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				4FA821CE2862F03C00BBF533 /* SignupFormModelValidator.swift */,
+				4FA821D02862F19E00BBF533 /* xib */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		4FA821D02862F19E00BBF533 /* xib */ = {
+			isa = PBXGroup;
+			children = (
 				4FA821C82862EAA500BBF533 /* SignupViewController.swift */,
 				4FA821C92862EAA500BBF533 /* SignupViewController.xib */,
 			);
-			path = Signup;
+			path = xib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +336,7 @@
 			files = (
 				4FA821912862E85D00BBF533 /* AppDelegate.swift in Sources */,
 				4FA821CA2862EAA500BBF533 /* SignupViewController.swift in Sources */,
+				4FA821CF2862F03C00BBF533 /* SignupFormModelValidator.swift in Sources */,
 				4FA821932862E85D00BBF533 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

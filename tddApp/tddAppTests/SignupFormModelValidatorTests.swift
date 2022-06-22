@@ -13,7 +13,14 @@ class SignupFormModelValidatorTests: XCTestCase {
     override func setUpWithError() throws {}
     override func tearDownWithError() throws {}
 
-    func testExample() throws {
-
+    func testSignFormModelValidator_WhenValidFirstNameProvided_ShouldReturnTrue() throws {
+        //MARK: - Arrange
+        let sut = SignupFormModelValidator()
+        //MARK: - Act
+        let isFirstNameValid = sut.isFirstNameValid(firstName:"ELO")
+        
+        //MARK: - Assert
+        XCTAssertTrue(isFirstNameValid,"The isFirstNameValid() should have returned TRUE for a valid first name but returned FALSE")
+        
     }
 }
