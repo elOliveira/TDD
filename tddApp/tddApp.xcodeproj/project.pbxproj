@@ -173,6 +173,7 @@
 		4FA821C52862E92700BBF533 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4FA821CE2862F03C00BBF533 /* SignupFormModelValidator.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -187,7 +188,6 @@
 		4FA821C72862EA3C00BBF533 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
-				4FA821CE2862F03C00BBF533 /* SignupFormModelValidator.swift */,
 				4FA821D02862F19E00BBF533 /* xib */,
 			);
 			path = Signup;
