@@ -10,10 +10,8 @@ import XCTest
 
 class SignupWebServiceTests: XCTestCase {
 
-    var sut: SignupWebService!
 
     override func setUp(){
-        sut = SignupWebService()
     }
     
     override func tearDown(){
@@ -21,6 +19,7 @@ class SignupWebServiceTests: XCTestCase {
 
     func testSignUpWebService_WhenGivenSucessFullResponse_ReturnsSucess(){
         // Arrange
+        let sut = SignupWebService(urlString: "http://appsdeveloperblog.com:8080/signup-mock-service/users")
         let expectation = self.expectation(description: "Signup Web Service Response Expectation")
         let signFormRequestModel = SignupFormRequestModel(firstName: "ELO", lastName: "Oliveira", email: "teste@gmail.com", password: "123456")
         // Act
