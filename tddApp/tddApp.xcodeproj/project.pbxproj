@@ -12,6 +12,8 @@
 		4F79EB462864E86B000553D5 /* SignupWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F79EB452864E86B000553D5 /* SignupWebServiceTests.swift */; };
 		4F79EB482864E968000553D5 /* SignupWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F79EB472864E968000553D5 /* SignupWebService.swift */; };
 		4F79EB4A28650BFB000553D5 /* SignupFormRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F79EB4928650BFB000553D5 /* SignupFormRequestModel.swift */; };
+		4F79EB4C2865129F000553D5 /* SignupResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F79EB4B2865129F000553D5 /* SignupResponseModel.swift */; };
+		4F79EB4E286513A1000553D5 /* SignupErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F79EB4D286513A1000553D5 /* SignupErrors.swift */; };
 		4FA821912862E85D00BBF533 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA821902862E85D00BBF533 /* AppDelegate.swift */; };
 		4FA821932862E85D00BBF533 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA821922862E85D00BBF533 /* SceneDelegate.swift */; };
 		4FA8219A2862E85F00BBF533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA821992862E85F00BBF533 /* Assets.xcassets */; };
@@ -47,6 +49,8 @@
 		4F79EB452864E86B000553D5 /* SignupWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServiceTests.swift; sourceTree = "<group>"; };
 		4F79EB472864E968000553D5 /* SignupWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebService.swift; sourceTree = "<group>"; };
 		4F79EB4928650BFB000553D5 /* SignupFormRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormRequestModel.swift; sourceTree = "<group>"; };
+		4F79EB4B2865129F000553D5 /* SignupResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponseModel.swift; sourceTree = "<group>"; };
+		4F79EB4D286513A1000553D5 /* SignupErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupErrors.swift; sourceTree = "<group>"; };
 		4FA8218D2862E85D00BBF533 /* tddApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tddApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA821902862E85D00BBF533 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FA821922862E85D00BBF533 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				4F1804382863833600E7D6A0 /* SignupConstants.swift */,
+				4F79EB4D286513A1000553D5 /* SignupErrors.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				4F79EB4928650BFB000553D5 /* SignupFormRequestModel.swift */,
+				4F79EB4B2865129F000553D5 /* SignupResponseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -349,7 +355,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F79EB4E286513A1000553D5 /* SignupErrors.swift in Sources */,
 				4FA821912862E85D00BBF533 /* AppDelegate.swift in Sources */,
+				4F79EB4C2865129F000553D5 /* SignupResponseModel.swift in Sources */,
 				4FA821CA2862EAA500BBF533 /* SignupViewController.swift in Sources */,
 				4FA821CF2862F03C00BBF533 /* SignupFormModelValidator.swift in Sources */,
 				4F79EB4A28650BFB000553D5 /* SignupFormRequestModel.swift in Sources */,
