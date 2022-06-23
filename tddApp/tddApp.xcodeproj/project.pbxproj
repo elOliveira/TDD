@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4F1804392863833600E7D6A0 /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1804382863833600E7D6A0 /* SignupConstants.swift */; };
 		4F18043B2863A4C200E7D6A0 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18043A2863A4C200E7D6A0 /* StringExtension.swift */; };
+		4F79EB462864E86B000553D5 /* SignupWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F79EB452864E86B000553D5 /* SignupWebServiceTests.swift */; };
+		4F79EB482864E968000553D5 /* SignupWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F79EB472864E968000553D5 /* SignupWebService.swift */; };
 		4FA821912862E85D00BBF533 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA821902862E85D00BBF533 /* AppDelegate.swift */; };
 		4FA821932862E85D00BBF533 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA821922862E85D00BBF533 /* SceneDelegate.swift */; };
 		4FA8219A2862E85F00BBF533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA821992862E85F00BBF533 /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		4F1804382863833600E7D6A0 /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
 		4F18043A2863A4C200E7D6A0 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		4F79EB452864E86B000553D5 /* SignupWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServiceTests.swift; sourceTree = "<group>"; };
+		4F79EB472864E968000553D5 /* SignupWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebService.swift; sourceTree = "<group>"; };
 		4FA8218D2862E85D00BBF533 /* tddApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tddApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA821902862E85D00BBF533 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FA821922862E85D00BBF533 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				4FA821CC2862EC0700BBF533 /* SignupFormModelValidatorTests.swift */,
+				4F79EB452864E86B000553D5 /* SignupWebServiceTests.swift */,
 			);
 			path = tddAppTests;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				4FA821CE2862F03C00BBF533 /* SignupFormModelValidator.swift */,
+				4F79EB472864E968000553D5 /* SignupWebService.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -343,6 +349,7 @@
 				4FA821912862E85D00BBF533 /* AppDelegate.swift in Sources */,
 				4FA821CA2862EAA500BBF533 /* SignupViewController.swift in Sources */,
 				4FA821CF2862F03C00BBF533 /* SignupFormModelValidator.swift in Sources */,
+				4F79EB482864E968000553D5 /* SignupWebService.swift in Sources */,
 				4F1804392863833600E7D6A0 /* SignupConstants.swift in Sources */,
 				4FA821932862E85D00BBF533 /* SceneDelegate.swift in Sources */,
 				4F18043B2863A4C200E7D6A0 /* StringExtension.swift in Sources */,
@@ -354,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FA821CD2862EC0700BBF533 /* SignupFormModelValidatorTests.swift in Sources */,
+				4F79EB462864E86B000553D5 /* SignupWebServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

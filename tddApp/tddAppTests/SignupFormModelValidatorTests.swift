@@ -100,5 +100,4 @@ class SignupFormModelValidatorTests: XCTestCase {
         //Assert
         XCTAssertTrue(isEmailValid,"The isValidEmailFormat() should have returned True for a email valid but is has returned FALSE")
     }
-    
 }
