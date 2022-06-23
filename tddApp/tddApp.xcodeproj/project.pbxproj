@@ -92,6 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F79EB4F2865152E000553D5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4F79EB452864E86B000553D5 /* SignupWebServiceTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4F79EB5028651541000553D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4FA821CC2862EC0700BBF533 /* SignupFormModelValidatorTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		4FA821842862E85D00BBF533 = {
 			isa = PBXGroup;
 			children = (
@@ -130,8 +146,8 @@
 		4FA821A62862E85F00BBF533 /* tddAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				4FA821CC2862EC0700BBF533 /* SignupFormModelValidatorTests.swift */,
-				4F79EB452864E86B000553D5 /* SignupWebServiceTests.swift */,
+				4F79EB5028651541000553D5 /* ViewModel */,
+				4F79EB4F2865152E000553D5 /* Network */,
 			);
 			path = tddAppTests;
 			sourceTree = "<group>";
