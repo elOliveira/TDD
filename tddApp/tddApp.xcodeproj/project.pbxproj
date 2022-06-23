@@ -11,6 +11,7 @@
 		4F18043B2863A4C200E7D6A0 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18043A2863A4C200E7D6A0 /* StringExtension.swift */; };
 		4F79EB462864E86B000553D5 /* SignupWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F79EB452864E86B000553D5 /* SignupWebServiceTests.swift */; };
 		4F79EB482864E968000553D5 /* SignupWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F79EB472864E968000553D5 /* SignupWebService.swift */; };
+		4F79EB4A28650BFB000553D5 /* SignupFormRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F79EB4928650BFB000553D5 /* SignupFormRequestModel.swift */; };
 		4FA821912862E85D00BBF533 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA821902862E85D00BBF533 /* AppDelegate.swift */; };
 		4FA821932862E85D00BBF533 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA821922862E85D00BBF533 /* SceneDelegate.swift */; };
 		4FA8219A2862E85F00BBF533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA821992862E85F00BBF533 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		4F18043A2863A4C200E7D6A0 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		4F79EB452864E86B000553D5 /* SignupWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServiceTests.swift; sourceTree = "<group>"; };
 		4F79EB472864E968000553D5 /* SignupWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebService.swift; sourceTree = "<group>"; };
+		4F79EB4928650BFB000553D5 /* SignupFormRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormRequestModel.swift; sourceTree = "<group>"; };
 		4FA8218D2862E85D00BBF533 /* tddApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tddApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA821902862E85D00BBF533 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FA821922862E85D00BBF533 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		4FA821C22862E92100BBF533 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				4F79EB472864E968000553D5 /* SignupWebService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -185,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				4FA821CE2862F03C00BBF533 /* SignupFormModelValidator.swift */,
-				4F79EB472864E968000553D5 /* SignupWebService.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -193,6 +195,7 @@
 		4FA821C62862E92C00BBF533 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4F79EB4928650BFB000553D5 /* SignupFormRequestModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				4FA821912862E85D00BBF533 /* AppDelegate.swift in Sources */,
 				4FA821CA2862EAA500BBF533 /* SignupViewController.swift in Sources */,
 				4FA821CF2862F03C00BBF533 /* SignupFormModelValidator.swift in Sources */,
+				4F79EB4A28650BFB000553D5 /* SignupFormRequestModel.swift in Sources */,
 				4F79EB482864E968000553D5 /* SignupWebService.swift in Sources */,
 				4F1804392863833600E7D6A0 /* SignupConstants.swift in Sources */,
 				4FA821932862E85D00BBF533 /* SceneDelegate.swift in Sources */,

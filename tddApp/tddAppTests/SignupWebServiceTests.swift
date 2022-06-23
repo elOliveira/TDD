@@ -10,19 +10,22 @@ import XCTest
 
 class SignupWebServiceTests: XCTestCase {
 
-    override func setUp(){
-    }
+    var sut: SignupWebService!
 
+    override func setUp(){
+        sut = SignupWebService()
+    }
+    
     override func tearDown(){
     }
 
     func testSignUpWebService_WhenGivenSucessFullResponse_ReturnsSucess(){
         // Arrange
+        let signFormRequestModel = SignupFormRequestModel(firstName: "ELO", lastName: "Oliveira", email: "teste@gmail.com", password: "123456")
         // Act
+        sut.singup(withForm: signFormRequestModel)
         // Asserts
     }
-    
-
 }
 
 // Arrange
