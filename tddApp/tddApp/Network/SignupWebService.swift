@@ -9,7 +9,7 @@ import Foundation
 
 class SignupWebService{
     
-    func singup(withForm: SignupFormRequestModel){
+    func singup(withForm: SignupFormRequestModel, completionHandler: @escaping(SignupResponseModel?, SignupErros?) -> Void ){
         
     }
 }
