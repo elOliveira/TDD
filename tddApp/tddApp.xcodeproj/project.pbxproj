@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F1804392863833600E7D6A0 /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1804382863833600E7D6A0 /* SignupConstants.swift */; };
+		4F18043B2863A4C200E7D6A0 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18043A2863A4C200E7D6A0 /* StringExtension.swift */; };
 		4FA821912862E85D00BBF533 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA821902862E85D00BBF533 /* AppDelegate.swift */; };
 		4FA821932862E85D00BBF533 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA821922862E85D00BBF533 /* SceneDelegate.swift */; };
 		4FA8219A2862E85F00BBF533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA821992862E85F00BBF533 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		4F1804382863833600E7D6A0 /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
+		4F18043A2863A4C200E7D6A0 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		4FA8218D2862E85D00BBF533 /* tddApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tddApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FA821902862E85D00BBF533 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FA821922862E85D00BBF533 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		4FA821C42862E92500BBF533 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4F18043A2863A4C200E7D6A0 /* StringExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				4FA821CF2862F03C00BBF533 /* SignupFormModelValidator.swift in Sources */,
 				4F1804392863833600E7D6A0 /* SignupConstants.swift in Sources */,
 				4FA821932862E85D00BBF533 /* SceneDelegate.swift in Sources */,
+				4F18043B2863A4C200E7D6A0 /* StringExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

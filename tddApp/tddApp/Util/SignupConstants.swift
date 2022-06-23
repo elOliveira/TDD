@@ -7,7 +7,12 @@
 
 import Foundation
 
-struct SignupConstants {
+struct FirstNameConstants {
     static let minimumLengthName:Int = 2
     static let maximumLengthName:Int = 10
+}
+
+struct PasswordConstants {
+    static let minimumLengthPassword:Int = 6
+    static let maximumLengthPassword:Int = 10
 }
