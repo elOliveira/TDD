@@ -53,6 +53,15 @@ class SignupFormModelValidatorTests: XCTestCase {
     }
     //MARK: - Password Tests
 
+    func testSignupFormModelValidator_WhenPasswordIsPerfectSize_ShouldReturnTrue(){
+        //Arrange
+
+        //Act
+        let isPasswordValid = sut.isPasswordLenghtValid(password:"1234567")
+        //Assert
+        XCTAssertTrue(isPasswordValid,"The isPasswordLenghtValid() should have returned True for a password that is lengh between \(PasswordConstants.minimumLengthPassword) and \(PasswordConstants.maximumLengthPassword) characters but it has returned False")
+    }
+    
     func testSignupFormModelValidator_WhenIsMatchBetweenTwoPasswordsProvided_ShouldReturnTrue(){
         //Arrange
         
@@ -80,15 +89,16 @@ class SignupFormModelValidatorTests: XCTestCase {
         //Assert
         XCTAssertFalse(isPasswordValid,"The isPaswordIsValid() should have returned False for a password that is Longer than \(PasswordConstants.maximumLengthPassword) characters but it has returned TRUE")
     }
-
-    func testSignupFormModelValidator_taok_ShouldReturnTrue(){
+    
+    //MARK: - Email Tests
+    
+    func testSignupFormModelValidator_WhenEmailIsValid_ShouldReturnTrue(){
         //Arrange
 
         //Act
-        let isPasswordValid = sut.isPasswordLenghtValid(password:"1234567")
+        let isEmailValid = sut.isValidEmailFormat(email:"jubileu@hotmail.com")
         //Assert
-        XCTAssertTrue(isPasswordValid,"The isPasswordLenghtValid() should have returned True for a password that is lengh between \(PasswordConstants.minimumLengthPassword) and \(PasswordConstants.maximumLengthPassword) characters but it has returned False")
+        XCTAssertTrue(isEmailValid,"The isValidEmailFormat() should have returned True for a email valid but is has returned FALSE")
     }
-    
     
 }

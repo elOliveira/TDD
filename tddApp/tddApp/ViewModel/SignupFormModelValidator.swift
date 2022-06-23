@@ -23,4 +23,8 @@ class SignupFormModelValidator {
         let passwordIsValid: Bool = password.isStringLenghtValid(text: password, minLengthLimit: PasswordConstants.minimumLengthPassword, maxLengthLimit: PasswordConstants.maximumLengthPassword)
         return passwordIsValid
     }
+    
+    func isValidEmailFormat(email:String) -> Bool{
+        return NSPredicate(format: "Self Matches %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}").evaluate(with: email)
+    }
 }
