@@ -16,9 +16,9 @@ class SignupWebService{
         self.urlString  = urlString
     }
     
-    func singup(withForm formModel: SignupFormRequestModel, completionHandler: @escaping(SignupResponseModel?, SignupErros?) -> Void ){
+    func singup(withForm formModel: SignupFormRequestModel, completionHandler: @escaping(SignupResponseModel?, SignupErro?) -> Void ){
         guard let url = URL(string: urlString) else {
-            completionHandler(nil,SignupErros.invalidRequestURLStringError)
+            completionHandler(nil,SignupErro.invalidRequestURLString)
             return
         }
         
@@ -37,7 +37,7 @@ class SignupWebService{
                 completionHandler(signupResponseModel,nil)
             }else{
             //remider create a unit test here for error value here
-                completionHandler(nil, SignupErros.resonseModelParsingError)
+                completionHandler(nil, SignupErro.invalidResponseModel)
             }
         }
         dataTask.resume()
