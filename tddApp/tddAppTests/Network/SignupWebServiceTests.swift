@@ -40,6 +40,31 @@ class SignupWebServiceTests: XCTestCase {
 
         self.wait(for: [expectation] ,timeout: 5)
     }
+    
+    func testSignUpWebService_WhenReceivedDifferentJSONResponse_ErrorTookPlace(){
+        // Arrange
+        let config = URLSessionConfiguration.ephemeral
+        config.protocolClasses = [MockURLProtocol.self]
+        let urlSession = URLSession(configuration: config)
+        let jsonString = "{\"path\":\"/users\", \"error\":\"Internal Server Error\"}"
+        MockURLProtocol.stubResponseData = jsonString.data(using: .utf8)
+        
+        //
+        let sut = SignupWebService(urlString: SignupConstants.signupURLString ,urlSession: urlSession)
+        let signFormRequestModel = SignupFormRequestModel(firstName: "ELO", lastName: "Oliveira", email: "teste@gmail.com", password: "123456")
+        let expectation = self.expectation(description: "Signup Web Service Response Expectation")
+
+        // Act
+        sut.singup(withForm: signFormRequestModel){ (signupResponseModel, error) in
+            // Asserts
+            // "{\"status\":\"ok\"}"
+            XCTAssertNil(signupResponseModel)
+            XCTAssertEqual(error, SignupErros.resonseModelParsingError)
+            expectation.fulfill()
+        }
+
+        self.wait(for: [expectation] ,timeout: 5)
+    }
 }
 
 // Arrange

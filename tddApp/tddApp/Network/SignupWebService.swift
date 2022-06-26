@@ -34,6 +34,7 @@ class SignupWebService{
                 completionHandler(signupResponseModel,nil)
             }else{
             //remider create a unit test here for error value here
+                completionHandler(nil, SignupErros.resonseModelParsingError)
             }
         }
         dataTask.resume()
