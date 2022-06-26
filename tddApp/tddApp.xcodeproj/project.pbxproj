@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F1804392863833600E7D6A0 /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1804382863833600E7D6A0 /* SignupConstants.swift */; };
 		4F18043B2863A4C200E7D6A0 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F18043A2863A4C200E7D6A0 /* StringExtension.swift */; };
+		4F5688E02867E3E700682E51 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5688DF2867E3E700682E51 /* MockURLProtocol.swift */; };
 		4F79EB462864E86B000553D5 /* SignupWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F79EB452864E86B000553D5 /* SignupWebServiceTests.swift */; };
 		4F79EB482864E968000553D5 /* SignupWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F79EB472864E968000553D5 /* SignupWebService.swift */; };
 		4F79EB4A28650BFB000553D5 /* SignupFormRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F79EB4928650BFB000553D5 /* SignupFormRequestModel.swift */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		4F1804382863833600E7D6A0 /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
 		4F18043A2863A4C200E7D6A0 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		4F5688DF2867E3E700682E51 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		4F79EB452864E86B000553D5 /* SignupWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServiceTests.swift; sourceTree = "<group>"; };
 		4F79EB472864E968000553D5 /* SignupWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebService.swift; sourceTree = "<group>"; };
 		4F79EB4928650BFB000553D5 /* SignupFormRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormRequestModel.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F5688DE2867E3C300682E51 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				4F5688DF2867E3E700682E51 /* MockURLProtocol.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		4F79EB4F2865152E000553D5 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +156,7 @@
 		4FA821A62862E85F00BBF533 /* tddAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				4F5688DE2867E3C300682E51 /* Mock */,
 				4F79EB5028651541000553D5 /* ViewModel */,
 				4F79EB4F2865152E000553D5 /* Network */,
 			);
@@ -388,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F5688E02867E3E700682E51 /* MockURLProtocol.swift in Sources */,
 				4FA821CD2862EC0700BBF533 /* SignupFormModelValidatorTests.swift in Sources */,
 				4F79EB462864E86B000553D5 /* SignupWebServiceTests.swift in Sources */,
 			);
