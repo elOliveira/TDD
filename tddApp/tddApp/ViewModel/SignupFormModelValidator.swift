@@ -10,7 +10,7 @@ import Foundation
 class SignupFormModelValidator {
      
     func isFirstNameValid(firstName: String) -> Bool{
-        let firstNameIsValid: Bool = firstName.isStringLenghtValid(text: firstName, minLengthLimit: FirstNameConstants.minimumLengthName , maxLengthLimit: FirstNameConstants.maximumLengthName)
+        let firstNameIsValid: Bool = firstName.isStringLenghtValid(text: firstName, minLengthLimit: SignupConstants.firstNameMinimumLength , maxLengthLimit: SignupConstants.firstNameMaximumLength)
         return firstNameIsValid
     }
     
@@ -20,7 +20,7 @@ class SignupFormModelValidator {
     }
     
     func isPasswordLenghtValid(password:String) -> Bool {
-        let passwordIsValid: Bool = password.isStringLenghtValid(text: password, minLengthLimit: PasswordConstants.minimumLengthPassword, maxLengthLimit: PasswordConstants.maximumLengthPassword)
+        let passwordIsValid: Bool = password.isStringLenghtValid(text: password, minLengthLimit: SignupConstants.passwordMinimumLength, maxLengthLimit: SignupConstants.passwordMaximumLength)
         return passwordIsValid
     }
     

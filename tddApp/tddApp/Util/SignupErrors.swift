@@ -7,6 +7,4 @@
 
 import Foundation
 
-enum SignupErros: Error {
-    
-}
+enum SignupErros: Error {}

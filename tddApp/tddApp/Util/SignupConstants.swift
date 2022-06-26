@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct FirstNameConstants {
-    static let minimumLengthName:Int = 2
-    static let maximumLengthName:Int = 10
-}
-
-struct PasswordConstants {
-    static let minimumLengthPassword:Int = 6
-    static let maximumLengthPassword:Int = 10
+struct SignupConstants {
+    static let firstNameMinimumLength:Int = 2
+    static let firstNameMaximumLength:Int = 10
+    static let lastNameMinimumLength:Int = 2
+    static let lastNameMaximumLength:Int = 10
+    static let passwordMinimumLength:Int = 6
+    static let passwordMaximumLength:Int = 10
+    static let signupURLString:String = "http://appsdeveloperblog.com:8080/signup-mock-service/users"
 }
