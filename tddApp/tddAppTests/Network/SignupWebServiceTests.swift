@@ -64,7 +64,8 @@ class SignupWebServiceTests: XCTestCase {
         // Act
         sut.singup(withForm: signFormRequestModel){ (signupResponseModel, error) in
             // Asserts
-            XCTAssertEqual(error, SignupErros.invalidRequestURLStringError)
+            XCTAssertEqual(error, SignupErros.invalidRequestURLStringError, "The signup() method did not return an expected error for an invaliudRequestURLString error")
+            XCTAssertNil(signupResponseModel,"When an invalidRequestURLString takes place, the response model must be nil")
             expectation.fulfill()
         }
         self.wait(for: [expectation], timeout: 2)
